@@ -10,17 +10,17 @@ var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 
 var formSubmitHandler = function(event) {
     event.preventDefault();
-    var city = cityInputEl.ariaValueMax.trim();
+    var city = cityInputEl.value.trim();
     if(city) {
         getCityWeather(city);
-        get5day(city);
+        get5Day(city);
         cities.unshift({city});
         cityInputEl.value = "";
     } else{
         alert("Please Enter A City");
     }
     saveSearch ();
-    pastSearchButtonEl(city);
+    pastSearch(city);
 }
 
 var saveSearch = function() {
@@ -28,8 +28,8 @@ var saveSearch = function() {
 };
 
 var getCityWeather = function(city) {
-    var APIKey = "69fe1c69989ab6543e8a01cd4fed4c66"
-    var apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKey}'
+    var ApiKey = "69fe1c69989ab6543e8a01cd4fed4c66"
+    var apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${ApiKey}'
 
     fetch(apiURL)
     .then(function(response){
@@ -70,7 +70,7 @@ var displayWeather = function(weather, searchCity) {
 
 var get5Day = function(city) {
     var APIKey = "69fe1c69989ab6543e8a01cd4fed4c66"
-    var apiURL = 'https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${APIKey}'
+    var apiURL = 'https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${ApiKey}'
 
     fetch(apiURL)
     .then(function(response) {
