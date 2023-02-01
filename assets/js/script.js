@@ -122,7 +122,7 @@ var display5Day = function(weather) {
 
 var pastSearch = function(pastSearch) {
   pastSearchEl = document.createElement("button");
-  pastSearchEl.textConten = pastSearch;
+  pastSearchEl.textContent = pastSearch;
   pastSearchEl.classList = "d-flex w-100 btn-light border p-2";
   pastSearchEl.setAttribute("data-city", pastSearch)
   pastSearchEl.setAttribute("type", "submit");

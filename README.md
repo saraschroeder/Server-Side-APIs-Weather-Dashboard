@@ -15,7 +15,9 @@ N/A
 In order to run my project you must select "Start Quiz" and go through the questions answering each one. If you get the answer wrong it will take off 5 seconds on the timer. At the end of the quiz you will see your score along with the highest scores on the quiz if taken by other users.
 
 ![alt text](./assets/images/Screenshot1.png)
-
+![alt text](./assets/images/Screenshot2.png)
+![alt text](./assets/images/Screenshot3.png)
+![alt text](./assets/images/Screenshot4.png)
 
 ## Credits
 
