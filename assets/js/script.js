@@ -50,7 +50,7 @@ var displayWeather = function(weather, searchCity) {
   citySearchInputEl.appendChild(currentDate);
 
   var weatherIcon = document.createElement("img")
-  weatherIcon.setAttribute("src", 'https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png');
+  weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`);
   citySearchInputEl.appendChild(weatherIcon);
 
   var temperatureEl = document.createElement("span");
@@ -100,7 +100,7 @@ var display5Day = function(weather) {
 
     var weatherIcon = document.createElement("img")
     weatherIcon.classList = "card-body text-center";
-    weatherIcon.setAttribute("src", 'https://openweathermap.org/img/wn/${dailyForecasr.weather[0].icon}@2x.png');
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${dailyForecast.weather[0].icon}@2x.png`);
 
     forecastEl.appendChild(weatherIcon);
 
